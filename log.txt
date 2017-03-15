@@ -1,0 +1,63 @@
+Output from commands sent from sendall(). The result was the same with send(). Looking into this further...
+
+>>> ================================ RESTART ================================
+>>> 
+Beginning the scan... 
+
+Available Devices: 
+
+1) OBDII
+
+Select device by it's number: 1
+You selected: 1 
+
+Attempting to connect with the device... 
+
+Name: SPP 
+ Host: 00:1D:A5:00:02:B1 
+ Port: 1 
+ Protocol: RFCOMM 
+
+Please enter the PIN for the device:  11111
+Connecting to 'SPP' on '00:1D:A5:00:02:B1' 
+
+Send command (q to quit):  ATZ.
+command... ATZ.
+encoded... b'ATZ.'
+Command sent: awaiting response...
+Response received.
+Raw response... b'?'
+Response decoded: b'?'
+ 
+Send command (q to quit):  atz
+command... atz
+encoded... b'atz'
+Command sent: awaiting response...
+Response received.
+Raw response... b'\r\r>'
+Response decoded: b'\r\r>'
+ 
+Send command (q to quit):  ATZ
+command... ATZ
+encoded... b'ATZ'
+Command sent: awaiting response...
+Response received.
+Raw response... b'?\r'
+Response decoded: b'?\r'
+ 
+Send command (q to quit):  ?
+command... ?
+encoded... b'?'
+Command sent: awaiting response...
+Response received.
+Raw response... b'\r>'
+Response decoded: b'\r>'
+ 
+Send command (q to quit):  ?
+command... ?
+encoded... b'?'
+Command sent: awaiting response...
+Response received.
+Raw response... b'?'
+Response decoded: b'?'
+Send command (q to quit):  
